@@ -1,0 +1,26 @@
+Imperative : Ýmperative(Emrli) programlaþdýrma programýn veziyyetini müxtelif emrler istifade ederek deyiþen programlaþdýrma paradigmasýdýr.Ýmperative programlaþdýrma programýn nece iþlediyini tesvir etmeye çalýþýr. Evveller imperative diller komputerlerin maþýn dili idi. Bu dillerin telimatlarý olduqca asan olmasýna baxmayaraq mürekkeb programlamlar yazýla bilmirdi. FORTRAN hal-hazýrda imperativ dillere mexsus esas xüsusiyyetleri - deyiþenleri, murekkeb ifadeleri, alt programlari ve s. olan compile edile bilen bir programdýr. Hardware-in tetbiq edilmesi, elave edilmesi de imperative programlaþdýrmaya aiddir.FORTRAN, C ve BASÝC kimi bir çox imperative programlaþdýrma dilleri assembler dilinin abstraksiyasýdýr*.
+
+Logic : Mentiqi programlaþdýrma mentiqe esaslanan programlaþdýrma paradigmasýdýr. Burada problemden asýlý olaraq emr ve ifadeler mentiqi cümleler þeklinde gösterilir. PROLOG, ASP ve DATALOG logic programlaþdýrma dillerindendir. Logic programlaþdýrmada programlar 2 komponente bölünür: mentiqi ve kontrol. Mentiqi komponentde yalnýz problemin helli tesvir olunur. Kontrol komponentinde ise neticenin baþqa hansý yollarla gösterile bileceyi araþdýrýlýr. Bele olan halda, biz bunu deye bilerik:
+alqoritm = mentiq + kontrol. Hal-hazýrda logic programming suni intellektde istifade edilir.
+
+Functional : Funksional programlaþdýrma neticelerin hesablanmasýna focus olan bir paradigmadýr.Funksiya çaðýrýldýqda esas olan þey inputun girilmesi ve uygun outputun ekrana verilmesidir.Bu növ programlaþdýrmada variableler deyiþken deyil(const ve ya final kimi teyin olunurlar). Ýmperative dilden üstünlüyü odur ki, daha az code yazmaqla eyni taski yerine yetirmek mümkündür.Bu programlaþdýrma Lambda calculusa da oz tohvelerini vermiþdir(meselen Haskell). Funksional programlaþdýrma hazýrda cebr ve hendesi movzularýn hell ve ya isbatýnda, hemçinin klassik mexanikanýn izahat ve tetbiqinde istifade edilir.
+
+Object-oriented : Obyekt-yönümlü programlaþdýrma hazýrda en çox istifade edilen paradigmalardýr.Ýstifade olunan ekser programlaþdýrma dilleri multi-paradigmlýdýr ve ekseriyyeti de OOPni destekleyir. Burada canlý ve ya cansýz her bir varlýða obyekt kimi baxýlýr ve onlarýn oxþar xüsussiyyetleri eyni bir classda birleþdirilir. OOPye C++, C#, PHP, Java, Python ve s. aiddir. OOPnin 4 esas concepti var : Encapsulation, Inheritance, Abstraction ve Polymorphism.
+
+*****************************************************
+in OOP
+Object : Etrafimizda gördüyümüz canlý ve ya cansýz her bir þey bu növ programlaþdýrmada obyekt kimi baxýlýr.
+
+Class : Eyni obyektlerin oxþar ve ya eyni xüsusiyyetleri bir yerde - classda cemleþir. Buraya variablelar ve methodlar aiddir.
+
+Encapsulation :  Verilen classlar public, private ve ya protected kimi teyin olunur. Public hamý terefinden, private yalnýz classýn özü terefinden, protected ise hem classýn özü, hem de subclasslarý terefinden görüle bilir.Encapsulationda melumati qorumaq meqsedi ile istifade olunur. Variablelar private teyin olunur, set ve get methodlari ile public edile biler.
+
+Abstraction : Abstractiondan inheritancede istifade edilir. Classlar ve methodlar abstract teyin olunur. Eger metod abstract teyin olunubsa, class da mütleq abstract olmalýdýr. Abstract methodun body hissesi olmur ve bu hisse subclasslar terefinden fill edilir(buna "override" deyilir). Abstract classý instantiate etmek olmur(yeni new yazmaq olmur).
+
+Inheritance : Ýnheritance ile subclasslar superclassdan variable ve methodlari goture bilirler.Bu, "SubClass extends SuperClass" þeklinde yazýlýr. Ýnheritance-in esas advantage-i istenilen qeder tekrar istifade oluna bilmesi ve subclassýn özüne xas variable ve methodlarý yaza bilmesidir.
+
+Polymorphism : Polymorphismde subclass superclassýn inherite edilmiþ methodlarýný yeniden müeyyenleþdirmek demekdir. Polymorphismin iki esas növü var:
+	1)Overload - overloadda method adý eyni qalýr, variablelar deyiþir.
+	2)Override - overrideda ise methodun her bir xüsusiyyeti eyni 	qalýr.Meselen abstract teyin olunmuþ method subclassda yeniden teyin 	olunur ve body hissesi burada yazýlýr.
+
+*abstraksiya - melumat azaltma, her hansý bir melumatýn ehemiyyetsiz xasse ve elametlerini fikren ayirmaq ve melumatý ümumileþdirmek;
